@@ -11,4 +11,4 @@ COPY target/jenkins-docker-integration.jar /app/jenkins-docker-integration.jar
 EXPOSE 8082
 
 # Command to run the Spring Boot application when the container starts
-CMD ["java", "-jar", "/app/jenkins-docker-integration.jar"]
+ENTRYPOINT ["java", "-jar", "/app/jenkins-docker-integration.jar"]
