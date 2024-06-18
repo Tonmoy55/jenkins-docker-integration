@@ -1,5 +1,5 @@
 # Use AdoptOpenJDK base image with Java 17
-FROM adoptopenjdk/openjdk17:alpine-slim AS build
+FROM openjdk:17-jdk-slim AS build
 
 # Set working directory inside the container
 WORKDIR /app
